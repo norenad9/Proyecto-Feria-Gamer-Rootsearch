@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dq84m2irbx1ur"]
+
+[ext_resource type="Script" uid="uid://cbl7hpriyd46x" path="res://scripts/mission_final.gd" id="1_3dmnj"]
+
+[node name="Mission_Final" type="Node2D" unique_id=1050861959]
+script = ExtResource("1_3dmnj")

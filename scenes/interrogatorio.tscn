@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bcf20begrc40h"]
+
+[ext_resource type="Script" uid="uid://0v1ocdmijfbq" path="res://scripts/interrogatorio.gd" id="1_hr6b5"]
+
+[node name="Interrogatorio" type="Node2D" unique_id=493451564]
+script = ExtResource("1_hr6b5")

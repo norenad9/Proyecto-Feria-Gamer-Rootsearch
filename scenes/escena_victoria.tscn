@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dpkqfv4x0admr"]
+
+[ext_resource type="Script" uid="uid://c0mwh2tbxbp17" path="res://scripts/escena_victoria.gd" id="1_3qs2e"]
+
+[node name="EscenaVictoria" type="Node2D"]
+script = ExtResource("1_3qs2e")

@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bqysegskfnrby"]
+
+[ext_resource type="Script" uid="uid://bvi0ivx2hka55" path="res://scripts/MenuPrincipal.gd" id="1_q4epk"]
+[ext_resource type="Texture2D" uid="uid://cad54ldv0qjxh" path="res://images/fondo_menu.png" id="2_q4epk"]
+[ext_resource type="Texture2D" uid="uid://bbx4uka2fueyc" path="res://images/titulo.png" id="3_cjknc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cjknc"]
+load_path = "res://.godot/imported/btn.png-43faab704ed2040156aa81ed690ea5b9.ctex"
+
+[sub_resource type="FontVariation" id="FontVariation_q4epk"]
+
+[node name="MenuPrincipal" type="Control" unique_id=1620591255]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -3.0
+offset_right = 10.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q4epk")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2100630235]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.156
+anchor_top = -0.163
+anchor_right = 1.156
+anchor_bottom = 1.2590001
+offset_left = -0.31999207
+offset_top = 0.35998535
+offset_right = -7.6800537
+offset_bottom = -82.48004
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.004901, 1.087456)
+texture = ExtResource("2_q4epk")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1678864249]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.031000001
+anchor_bottom = 0.056
+offset_left = 256.0
+offset_top = 96.0
+offset_right = 1024.32
+offset_bottom = 225.68
+color = Color(0, 0, 0, 1)
+
+[node name="titulo" type="TextureRect" parent="." unique_id=259624795]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 45.0
+offset_right = 1139.0
+offset_bottom = 355.0
+texture = ExtResource("3_cjknc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=320041578]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33984378
+anchor_top = 0.5696667
+anchor_right = 0.6953125
+anchor_bottom = 0.94861114
+offset_left = -3.0517578e-05
+offset_top = -0.16000366
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="btnJugar" type="TextureButton" parent="VBoxContainer" unique_id=1146589383]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = SubResource("CompressedTexture2D_cjknc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/btnJugar" unique_id=1343463440]
+layout_mode = 0
+offset_left = 130.00003
+offset_top = 55.0
+offset_right = 284.0001
+offset_bottom = 97.0
+theme_override_fonts/font = SubResource("FontVariation_q4epk")
+theme_override_font_sizes/font_size = 30
+text = "JUGAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnSalir" type="TextureButton" parent="VBoxContainer" unique_id=160418005]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = SubResource("CompressedTexture2D_cjknc")
+texture_pressed = SubResource("CompressedTexture2D_cjknc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Salir" type="Label" parent="VBoxContainer/btnSalir" unique_id=1866549841]
+layout_mode = 0
+offset_left = 158.00003
+offset_top = 57.0
+offset_right = 239.00006
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 30
+text = "SALIR"
+horizontal_alignment = 1
+vertical_alignment = 1

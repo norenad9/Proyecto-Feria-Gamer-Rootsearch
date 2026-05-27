@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dyscf3s8vr7ci"]
+
+[ext_resource type="Script" uid="uid://dxkm4d8x5i82x" path="res://scripts/mission3.gd" id="1_6tvt0"]
+[ext_resource type="Script" path="res://scripts/GraphRenderer.gd" id="2_yt4la"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85jxd"]
+bg_color = Color(0.6, 0.6, 0.6, 0.5137255)
+
+[node name="Mission3" type="Node2D"]
+script = ExtResource("1_6tvt0")
+
+[node name="GraphRenderer" type="Node2D" parent="."]
+script = ExtResource("2_yt4la")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_85jxd")
+
+[node name="VBox" type="VBoxContainer" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_right = -100.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="LogLabel" type="RichTextLabel" parent="UI/Panel/VBox"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="HBoxButtons" type="HBoxContainer" parent="UI/Panel/VBox"]
+layout_mode = 2
+
+[node name="BtnKruskal" type="Button" parent="UI/Panel/VBox/HBoxButtons"]
+layout_mode = 2
+text = "Kruskal"
+
+[node name="BtnPrim" type="Button" parent="UI/Panel/VBox/HBoxButtons"]
+layout_mode = 2
+text = "Prim"
+
+[node name="BtnReset" type="Button" parent="UI/Panel/VBox/HBoxButtons"]
+layout_mode = 2
+text = "Reset"
+
+[node name="BtnNext" type="Button" parent="UI/Panel/VBox"]
+layout_mode = 2
+text = "Next"
+
+[node name="StatusLabel" type="Label" parent="UI/Panel/VBox"]
+layout_mode = 2
